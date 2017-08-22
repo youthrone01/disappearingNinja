@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Disappearing Ninja</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').click(function(){
+                    $(this).hide('slow');
+                });
+
+                $('button').click(function(){
+                    $('#bigninja').show(100);
+                    $('#bigninja').hide(5000);
+                    $('.ninja').show(9500);
+                })
+
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>jQuery - assignment 1</h1>
+            <img id="bigninja" src="https://s3ninja.net/assets/images/ninja.jpg" alt="ninja_photo">
+            <div>
+                <img class="ninja" src="https://s3ninja.net/assets/images/ninja.jpg" alt="ninja_photo">
+                <img class="ninja" src="https://s3ninja.net/assets/images/ninja.jpg" alt="ninja_photo">
+                <img class="ninja" src="https://s3ninja.net/assets/images/ninja.jpg" alt="ninja_photo">
+                <img class="ninja" src="https://s3ninja.net/assets/images/ninja.jpg" alt="ninja_photo">
+            </div>
+
+            <div>
+                <img class="ninja" src="https://s3ninja.net/assets/images/ninja.jpg" alt="ninja_photo">
+                <img class="ninja" src="https://s3ninja.net/assets/images/ninja.jpg" alt="ninja_photo">
+                <img class="ninja" src="https://s3ninja.net/assets/images/ninja.jpg" alt="ninja_photo">
+                <img class="ninja" src="https://s3ninja.net/assets/images/ninja.jpg" alt="ninja_photo">
+            </div>
+
+            <button>Restore</button>
+        </div>
+    
+    </body>
+</html>
